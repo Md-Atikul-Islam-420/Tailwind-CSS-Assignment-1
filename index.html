@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark"
+id="htmlTag">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="output/main.css">
 </head>
-<body class="bg-[#FAFAFA]">
+<body class="bg-[#FAFAFA] dark:bg-gray-900">
     <!--header section-->
 
     <header class="md:mx-14 md:my-4 py-2 px-2">
@@ -15,7 +16,7 @@
             <img class="w-20 md:w-fit" src="image/c4u full logo_2022 1(2).png" alt="">
 
             <div class="">
-                <ul class="flex flex-row items-center gap-1 md:gap-5 text-xs md:text-xl">
+                <ul class="flex flex-row items-center gap-1 md:gap-5 text-xs md:text-xl dark:text-white">
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li class="text-[#F44335]"><a href="">Upskill</a></li>
@@ -25,10 +26,10 @@
 
             <div class="flex flex-row items center gap-1 md:gap-5">
 
-                <div class="bg-[#F44335] md:text-base text-xs md:py-3 py-1 md:px-6 px-1 rounded-md text-white font-semibold ">Register Interest</div>
+                <div class="bg-[#F44335] md:text-base text-xs md:py-3 py-1 md:px-6 px-1 rounded-md text-white font-semibold dark:text-white ">Register Interest</div>
 
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:size-10 hover:scale-105 transition">
+                <button id="switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:size-10 hover:scale-105 transition dark:stroke-white">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                       </svg>
                 </button>
@@ -90,11 +91,11 @@
  <section class="container grid grid-cols-12 mx-auto mb-8 gap-8 md:px-0 px-4 pt-5 md:pt-10">
 
     <section class="md:col-span-5 col-span-12 md:ml-8">
-        <p class="text-xs md:text-xl md:border-r md:border-r-[#D1D3D4] md:border-r-1">Pave your path to career success by gaining  a  professional  Google certificate with the support of C4U</p>
+        <p class="text-xs md:text-xl md:border-r md:border-r-[#D1D3D4] md:border-r-1 dark:text-white">Pave your path to career success by gaining  a  professional  Google certificate with the support of C4U</p>
     </section>
 
     <section class="md:col-span-7 col-span-12 md:ml-8">
-        <img class="w-fit" src="image/All Logo Selection.png" alt="logo">
+        <img class="w-fit dark:bg-white" src="image/All Logo Selection.png" alt="logo">
     </section>
 </section> 
 
@@ -344,9 +345,21 @@
             <p class="text-[10px] md:text-[16px] text-[#20484F] pt-4 md:pt-8 dark:text-gray-400">Linkedin</p>
         </div>
     </section>
+    <!--footer section-->
+
+   <footer class="text-[#20484F] text-center text-xs md:text-xl border-t pt-2 pb-5  w-full dark:text-white">
+    Copyright 2024 Creatives For You LTD
+   </footer>
 
 
 
+
+    <script>
+        const htmlTag = document.getElementById("htmlTag");
+        document.getElementById("switch").addEventListener("click", function () {
+            htmlTag.classList.toggle("dark");
+        });
+    </script>
 
 
 
