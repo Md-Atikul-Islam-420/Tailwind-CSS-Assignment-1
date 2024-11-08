@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+    .tag{
+        @apply bg-white border-[1px] border-black rounded-full uppercase text-xs px-3 md:px-8 
+    }
+    .tag1{
+        @apply bg-[#01FF84] border-[1px] border-black rounded-full uppercase text-xs px-3 md:px-8 
+    }
+}
